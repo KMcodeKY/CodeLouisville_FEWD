@@ -194,11 +194,6 @@ a:hover#menu-icon {
   text-align: center;
 }
 
-/*Research Page - Selector Overlay for Modals*/
-.overlay {
-  display: none;
-}
-
 /*Research Page - Modal*/
 .modal {
   display: none;
@@ -709,11 +704,6 @@ footer {
     margin-left: 40px;
   }
 
-  /*Research Page - Sections (Projects):Hover*/
-  .research-project:hover .overlay{
-  	opacity: 0.9;
-  }
-
   /*Research Page - Selector Overlay for Sections (Projects)*/
   .overlay {
     position: absolute;
@@ -722,29 +712,21 @@ footer {
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
+    opacity: 0.9;
     background-color: #a6a6a6; /*headerTextColor*/
     cursor: pointer;
-    display: inline;
+    display: none;
   }
 
   /*Research Page - Selector Overlay for Sections (Projects) - Text*/
   .overlay-text {
     color: black;
-    font-size: 175%;
+    font-size: 150%;
+    font-weight: bold;
     position: absolute;
     top: 40%;
-    left: 10%;
-    /* Safari */
-    -webkit-transform: rotate(-45deg);
-    /* Firefox */
-    -moz-transform: rotate(-45deg);
-    /* IE */
-    -ms-transform: rotate(-45deg);
-    /* Opera */
-    -o-transform: rotate(-45eg);
-    /* Internet Explorer */
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    left: 15%;
+    display: none;
   }
 
   /*Standard Formatting for all Break Lines (Remove from Research Page)*/
